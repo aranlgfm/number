@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Number chat</title>
+    <!-- CSS include -->
+    <%include chatStyle.ejs%>
+        <style>
+        </style>
+</head>
+
+<body>
+
+    <!-- number baseaball include -->
+    <%include num.ejs%>
+        <!-- user list -->
+        <div>
+            <!-- <ul id="userList"></ul> -->
+        </div>
+        <!-- chat log area -->
+        <div id="chatLog">
+            <ul id="messages"></ul>
+        </div>
+        <!-- chat input tag -->
+        <div id="chatInput">
+            <input id="m" autocomplete="off" />
+            <input type="button" id="sendBtn" value="send" />
+        </div>
+
+        <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <%include ../js/chatJs.ejs%>
+</body>
+
+</html>
