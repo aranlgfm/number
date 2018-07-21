@@ -7,6 +7,8 @@ var name = "apex";
 
 var userIndex = ["aRan", "junYong", "hyoSook", "hyeYeon", "yeNa", "Apex"];
 
+console.log('server start');
+
 // 리스트 만들기
 function List() {
     this.elements = {};
