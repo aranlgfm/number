@@ -2,7 +2,6 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-const hostname = "115.95.171.210";
 var addr = "";
 var name = "apex";
 
@@ -27,9 +26,7 @@ List.prototype.get = function (idx) {
 var userList = new List();
 
 // 서버 포트
-http.listen(2700, hostname, function () {
-    console.log('server start');
-});
+http.listen(2700);
 
 require('dns').lookup(require('os').hostname(), function (err, add, fam) {
     addr = add;
