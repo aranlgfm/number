@@ -28,7 +28,7 @@ List.prototype.get = function (idx) {
 var userList = new List();
 
 // 서버 포트
-http.listen(2700);
+http.listen(2700, '0.0.0.0');
 
 require('dns').lookup(require('os').hostname(), function (err, add, fam) {
     addr = add;
