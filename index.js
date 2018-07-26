@@ -5,6 +5,7 @@ var io = require('socket.io')(http);
 var addr = "";
 var name = "apex";
 
+// DB로 교체 예정
 var userIndex = ["aRan", "junYong", "hyoSook", "hyeYeon", "yeNa", "Apex"];
 
 console.log('server start');
