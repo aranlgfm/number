@@ -8,11 +8,25 @@
         font-size: 250%;
     }
 
+
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 600%;
+        }
+    }
+
     #notiText,
     #noteMsg {
         color: dimgray;
         font-family: 'Nanum Pen Script', cursive;
         font-size: 150%;
+    }
+
+    @media (max-width: 600px) {
+        #notiText,
+        #noteMsg {
+            font-size: 250%;
+        }
     }
 
     #myNumber {
@@ -27,6 +41,12 @@
         /* color: deepskyblue */
     }
 
+    @media (max-width: 600px) {
+        #myNumber {
+            font-size: 230%;
+        }
+    }
+
     #myNumber:focus {
         border: 2px solid black;
     }
@@ -37,6 +57,12 @@
         color: black;
     }
 
+    @media (max-width: 600px) {
+        .btnText {
+            font-size: 270%;
+        }
+    }
+
     #numTable,
     #resTable {
         text-align: center;
@@ -44,9 +70,21 @@
         width: 100%;
     }
 
+    @media (max-width: 600px) {
+        #numTable {
+            height: 150%;
+        }
+    }
+
     #resTable {
         font-family: 'Do Hyeon', sans-serif;
         font-size: 135%;
+    }
+
+    @media (max-width: 600px) {
+        #resTable {
+            font-size: 200%;
+        }
     }
 
     #outNumBox,
